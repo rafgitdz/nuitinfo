@@ -1,4 +1,4 @@
-﻿<phone:PhoneApplicationPage 
+﻿<phone:PhoneApplicationPage xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"  
     x:Class="ClientWP7.Registration"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -27,21 +27,56 @@
         </StackPanel>
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
-        <Grid ShowGridLines="True" Margin="12,0,12,0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="auto" />
-                <RowDefinition />
-                <RowDefinition Height="auto" />
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <TextBox Text="1st row 1st column" TextWrapping="Wrap" Grid.Column="0" Grid.Row="0" />
-            <TextBox Text="3rd row 1st column" TextWrapping="Wrap" Grid.Column="0" Grid.Row="2" />
-            <Button Content="1st row 3rd column" FontSize="17" Grid.Column="1" Grid.Row="0" />
-            <Button Content="3rd row 2nd column" FontSize="17" Grid.Column="1" Grid.Row="2" />
-        </Grid>
+
+        <ScrollViewer Grid.Row="1" >
+
+            <StackPanel x:Name="ContentPanel" Margin="12,17,0,28">
+                <StackPanel Margin="20" x:Name="UserNamePanel" Orientation="Horizontal">
+                    <TextBlock Text="Username"></TextBlock>
+                    <TextBox Name="tbUserName" Width="300"></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="NamePanel" Orientation="Horizontal">
+                    <TextBlock Text="Name "></TextBlock>
+                    <TextBox Name="tbName" Width="300" ></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="FirstNamePanel" Orientation="Horizontal">
+                    <TextBlock Text="First Name "></TextBlock>
+                    <TextBox Name="tbFirstName" Width="300" ></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="MailPanel" Orientation="Horizontal">
+                    <TextBlock Text="Mail "></TextBlock>
+                    <TextBox Name="tbMail" Width="300" ></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="PasswordPanel" Orientation="Horizontal">
+                    <TextBlock Text="Password "></TextBlock>
+                    <PasswordBox Name="PasswordBox" Width="300" ></PasswordBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="ConfPasswordPanel" Orientation="Horizontal">
+                    <TextBlock Text="Confirm Password "></TextBlock>
+                    <PasswordBox Name="ConfPasswordBox" Width="300" ></PasswordBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="GenderPanel" Orientation="Horizontal">
+                    <TextBlock Text="Gender "></TextBlock>
+                    <ComboBox Name="ComboBoxGender">
+                        <ComboBoxItem Content="Male" />
+                        <ComboBoxItem Content="Female"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <StackPanel Margin="20" x:Name="BirthDatePanel" Orientation="Horizontal">
+                    <TextBlock Text="BirthDate "></TextBlock>
+                    <TextBox Name="tbBirthDate" Width="300" ></TextBox>
+                </StackPanel>
+
+                <Button Name="btnValidate" Content="Validate" FontSize="17" />
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
  
     <!--Exemple de code illustrant l'utilisation de l'ApplicationBar-->
