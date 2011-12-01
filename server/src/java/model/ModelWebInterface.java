@@ -33,8 +33,9 @@ public class ModelWebInterface {
     public List<User> getUserByLastName(String lastname) {
         List<User> result = new ArrayList<User>();
         for (User user : this._users)
-            if (user.getLastName() == null ? lastname == null : user.getLastName().equals(lastname))
+            if (user.getLastname() == null ? lastname == null : user.getLastname().equals(lastname))
                 result.add(user);
         return result;
-
+    }
 }
+
