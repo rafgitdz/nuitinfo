@@ -6,34 +6,78 @@ package model;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.io.Serializable;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.ManyToMany;
 
 /**
  *
  * @author mavomoeb
  */
-public class Wish {
-    private Integer _id;
+@Entity
+public class Wish implements Serializable{
+    private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long _id;
+    
+    
+    @Column(name="name")
     private String _name;
+
+    @Column(name="description")
     private String _description;
+
+    @ManyToMany(cascade=CascadeType.ALL)
     private List<Category> _categories;
 
     public Wish() {
         this._categories = new ArrayList<Category>();
     }
     
-    public Wish(Integer id, String name, String description) {
+    public Wish(Long id, String name, String description) {
         this._id = id;
         this._name = name;
         this._description = description;
         this._categories = new ArrayList<Category>();
     }
 
-    public Wish(Integer id, String name, String description,
+    public Wish(Long id, String name, String description,
                 List<Category> categories) {
         this._id = id;
         this._name = name;
         this._description = description;
         this._categories = categories;
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 0;
+        hash += (_id != null ? _id.hashCode() : 0);
+        return hash;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
+        if (!(object instanceof Wish)) {
+            return false;
+        }
+        Wish other = (Wish) object;
+        if ((this._id == null && other._id != null) || (this._id != null && !this._id.equals(other._id))) {
+            return false;
+        }
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "model.Wish[id=" + _id + "]";
     }
 
 /******************************  GETTERS **************************************/
@@ -50,7 +94,7 @@ public class Wish {
         return _description;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return _id;
     }
 
@@ -72,7 +116,7 @@ public class Wish {
         this._description = description;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this._id = id;
     }
 
