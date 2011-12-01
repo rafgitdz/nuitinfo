@@ -15,6 +15,18 @@ import java.util.List;
 public class ModelWebInterface {
     private List<User> _users;
 
+
+    public boolean CreateUser (String  name, String lastname,
+            String nickname, String pwd, String mail, Integer birthday) {
+            for (User user : _users)
+                if (user.getNickname() == null ? nickname == null : user.getNickname().equals(nickname))
+                    return false;
+            _users.add(new User(name, lastname, mail, nickname, pwd));
+            return true;
+    }
+
+
+    /****************************** GET USER ********************************/
     public User getUserById(Integer id) {
         for (User user : this._users)
             if (user.getId() == id)
