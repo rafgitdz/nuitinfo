@@ -70,6 +70,10 @@ public class User {
         return _lastname;
     }
 
+    public String getName () {
+        return _name;
+    }
+
     public String getNickname() {
         return _nickname;
     }
