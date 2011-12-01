@@ -23,27 +23,49 @@ namespace ClientWP7
 
         private void createAccount_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("link vers la page de création du compte");
+            NavigationService.Navigate(new Uri("/UserPage.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void nicknameBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            nicknameBox.Text = "";
+            if (nicknameBox.Text == "Your nickname")
+            {
+                nicknameBox.Text = "";
+            }
         }
 
         private void nicknameBox_LostFocus(object sender, RoutedEventArgs e)
         {
-            nicknameBox.Text = "Your nickname";
+            if (nicknameBox.Text == "")
+            {
+                nicknameBox.Text = "Your nickname";
+            }
         }
 
-        private void passwdBox_GotFocus(object sender, RoutedEventArgs e)
+        private void loginButton_Click(object sender, RoutedEventArgs e)
         {
-            passwdBox.Text = "";
+            if ((nicknameBox.Text == "test") && (passwordBox.Password == "toto")) 
+            {
+
+                NavigationService.Navigate(new Uri("/UserPage.xaml", UriKind.RelativeOrAbsolute));
+
+            }
         }
 
-        private void passwdBox_LostFocus(object sender, RoutedEventArgs e)
+        private void passwordBox_GotFocus(object sender, RoutedEventArgs e)
         {
-            passwdBox.Text = "Your paswword";
+            if (passwordBox.Password == "Your password")
+            {
+                passwordBox.Password = "";
+            }
+        }
+
+        private void passwordBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (passwordBox.Password == "")
+            {
+                passwordBox.Password = "Your password";
+            }
         }
     }
 }
