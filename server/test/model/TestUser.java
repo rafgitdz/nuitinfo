@@ -16,7 +16,7 @@ public class TestUser extends TestCase {
     @Test
     public void testCreateUser() {
         User user1 = new User("peter", "stalin", "bla@bma.com", "lol", "azerty");
-        assertEquals("peter",user1.getName());
+        assertEquals("peter",user1.getLastname());
     }
 
     
