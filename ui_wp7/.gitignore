@@ -1,0 +1,11 @@
+obj/
+[Cc]lient[Bb]in/
+[Dd]eploy/
+[Dd]ebug/
+TestResults/
+*.suo
+*.csproj.user
+*.cache
+*.xap
+*.vsmdi
+*.testsettings
