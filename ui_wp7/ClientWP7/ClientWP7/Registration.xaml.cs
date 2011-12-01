@@ -19,5 +19,30 @@ namespace ClientWP7
         {
             InitializeComponent();
         }
+
+        private void tbUserName_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tbUserName_LostFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tbName_LostFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void tbName_GotFocus(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnValidate_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("Gagné");
+        }
     }
 }

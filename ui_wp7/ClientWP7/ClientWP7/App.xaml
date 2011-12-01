@@ -7,6 +7,16 @@
 
     <!--Ressources d'applications-->
     <Application.Resources>
+        <Style x:Key="PhoneComboBox" TargetType="ComboBox">
+            <Setter Property="Foreground" Value="{StaticResource PhoneForegroundBrush}"/>
+            <Setter Property="Background" Value="{StaticResource PhoneBackgroundBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PhoneBorderBrush}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+            <Setter Property="Padding" Value="4,3"/>
+            <Setter Property="Margin" Value="5"/>
+        </Style>
     </Application.Resources>
 
     <Application.ApplicationLifetimeObjects>
