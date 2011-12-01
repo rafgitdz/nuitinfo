@@ -13,21 +13,22 @@ import java.util.List;
  * @author asamie
  */
 public class ModelWebInterface {
-    private List<User> _users;
+    private static List<User> _users;
 
 
-    public boolean CreateUser (String  name, String lastname,
+    public static Integer CreateUser (String  name, String lastname,
             String nickname, String pwd, String mail, Integer birthday) {
             for (User user : _users)
                 if (user.getNickname() == null ? nickname == null : user.getNickname().equals(nickname))
-                    return false;
+                    return 0;
             _users.add(new User(name, lastname, mail, nickname, pwd));
-            return true;
+            return 1;
     }
 
 
     /****************************** GET USER ********************************/
-    public User getUserById(Integer id) {
+
+    public User getUserById(Long id) {
         for (User user : this._users)
             if (user.getId() == id)
                 return user;

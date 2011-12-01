@@ -20,5 +20,30 @@ namespace ClientWP7
         {
             InitializeComponent();
         }
+
+        private void createAccount_Click(object sender, RoutedEventArgs e)
+        {
+            Console.WriteLine("link vers la page de création du compte");
+        }
+
+        private void nicknameBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            nicknameBox.Text = "";
+        }
+
+        private void nicknameBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            nicknameBox.Text = "Your nickname";
+        }
+
+        private void passwdBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            passwdBox.Text = "";
+        }
+
+        private void passwdBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            passwdBox.Text = "Your paswword";
+        }
     }
 }
