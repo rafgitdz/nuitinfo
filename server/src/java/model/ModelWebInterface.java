@@ -15,7 +15,7 @@ import java.util.List;
 public class ModelWebInterface {
     private List<User> _users;
 
-    public User getUserById(Integer id) {
+    public User getUserById(Long id) {
         for (User user : this._users)
             if (user.getId() == id)
                 return user;
