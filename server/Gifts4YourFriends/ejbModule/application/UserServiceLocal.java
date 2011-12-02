@@ -1,12 +1,12 @@
 package application;
 
+import java.util.Date;
+import java.util.List;
+
 import javax.ejb.Local;
 
 import model.Category;
-import model.Wish;
-
-import java.util.Date;
-import java.util.List;
+import model.user.Wish;
 
 @Local
 public interface UserServiceLocal{

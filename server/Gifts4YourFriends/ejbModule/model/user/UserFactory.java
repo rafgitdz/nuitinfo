@@ -3,8 +3,6 @@ package model.user;
 import java.util.Date;
 import java.util.List;
 
-import model.Wish;
-
 public class UserFactory {
 
 	public User newUser(String name, String lastname, Date birthday, String mail,String nickname,String pwd,Integer sex, List<User> friends,

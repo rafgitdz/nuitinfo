@@ -6,7 +6,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 
 import model.Category;
-import model.Wish;
+import model.user.Wish;
 
 @Stateless
 public class UserService implements UserServiceLocal{

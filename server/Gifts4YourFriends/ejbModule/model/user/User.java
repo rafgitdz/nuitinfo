@@ -1,6 +1,3 @@
-/*
- * The user of our app
- */
 
 package model.user;
 
@@ -15,13 +12,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 
-import model.Wish;
-
 
 
 @Entity
 public class User implements Serializable{
     private static final long serialVersionUID = 1L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long _id;
