@@ -1,0 +1,2 @@
+serviceClass: com.nuitinfo.gyf.client.GreetingService
+path: FA0B746962B3A7B7846BF659C04D598D.gwt.rpc
