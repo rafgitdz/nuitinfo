@@ -1,1 +1,10 @@
-*.properties*
+jboss*/
+*.class
+.project
+.metadata/
+build/
+.classpath
+.settings/
+MANIFEST*
+.directory
+
