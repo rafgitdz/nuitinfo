@@ -42,7 +42,7 @@ namespace ClientWP7
 
         private void btnValidate_Click(object sender, RoutedEventArgs e)
         {
-            Console.WriteLine("Gagné");
+            NavigationService.Navigate(new Uri("/UserProfile.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
