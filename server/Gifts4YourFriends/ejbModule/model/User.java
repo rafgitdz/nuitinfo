@@ -4,48 +4,45 @@
 
 package model;
 
+import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.ArrayList;
-import java.io.Serializable;
 
-/**
- *
- * @author Michelle AVOMO, Milan Kabac
- *
- */
-//@Entity
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Transient;
+
+
+@Entity
 public class User implements Serializable{
     private static final long serialVersionUID = 1L;
-   // @Id
-   // @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long _id;
 
-   // @Column(name="name")
+  
     private String _name;
 
-   // @Column(name="last_name")
+ 
     private String _lastname;
 
-  //  @Temporal(TemporalType.DATE)
     private Date _birthDate;
 
-  //  @Column(name="email")
     private String _email;
 
-   // @Column(name="nickname")
     private String _nickname;
 
-    //@Column(name="password")
     private String _password;
 
-   // @Column(name="sex")
     private Boolean _sex;
-    
-   // @ManyToMany(cascade=CascadeType.ALL)
+   
+    @Transient
     private List<User> _friends;
 
-   // @OneToMany
+  @Transient
     private List<Wish> _wishList;
 
     public User() {
