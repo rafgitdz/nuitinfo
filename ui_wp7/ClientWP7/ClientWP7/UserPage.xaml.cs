@@ -16,23 +16,42 @@ namespace ClientWP7
 {
     public partial class UserPage : PhoneApplicationPage
     {
-        
+
+        public List<Wish> Wishes { get; set; }
         
         public UserPage()
         {
             InitializeComponent();
         }
 
+
+        protected override void OnNavigatedTo(System.Windows.Navigation.NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            string msg = "";
+            if (NavigationContext.QueryString.TryGetValue("msg", out msg))
+            {
+                //List<Wish> wishes = new List<Wish>();
+                if (Wishes == null)
+                {
+                    Wishes = new List<Wish>();
+                }
+                Wishes.Add(new Wish(msg,string.Empty,ClientWP7.Visibility.Public));
+                //List<string> wishListDure = new List<string>();
+                //IEnumerable<string> temp;
+                //temp = (IEnumerable<string>)wishList.ItemsSource;
+                //if (temp != null)
+                //    wishListDure = temp.ToList();
+
+                //wishListDure.Add(msg);
+                wishList.ItemsSource = Wishes;
+                
+            }
+        }
+
         private void AddWish_Click(object sender, RoutedEventArgs e)
         {
-            List<string> wishListDure = new List<string>();
-            IEnumerable<string> temp;
-            temp = (IEnumerable<string>) wishList.ItemsSource;
-            if (temp != null)
-                wishListDure = temp.ToList();
-
-            wishListDure.Add("Wish");
-            wishList.ItemsSource = wishListDure;
+            NavigationService.Navigate(new Uri("/WishRegistration.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void ModifyWish_Click(object sender, RoutedEventArgs e)
@@ -42,14 +61,7 @@ namespace ClientWP7
 
         private void DeleteWish_Click(object sender, RoutedEventArgs e)
         {
-            List<string> wishListDure = new List<string>();
-            IEnumerable<string> temp;
-            temp = (IEnumerable<string>)wishList.ItemsSource;
-            if (temp != null)
-                wishListDure = temp.ToList();
-
-            wishListDure.Add("Wish");
-            wishList.ItemsSource = wishListDure;
+            //Wishes.Remove(
         }
 
         private void AddContact_Click(object sender, RoutedEventArgs e)
@@ -81,7 +93,7 @@ namespace ClientWP7
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/UserProfile.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }

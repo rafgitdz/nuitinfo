@@ -35,7 +35,7 @@
                                             <StackPanel Orientation="Horizontal" Height="80" Width="400">
                                                 <StackPanel Orientation="Vertical" Height="80">
                                                     <StackPanel Orientation="Horizontal" Height="40" >
-                                                        <TextBlock Width="200" FontSize="22" Text="WishT" Height="40"/>
+                                                        <TextBlock Width="200" FontSize="22" Text="{Binding Name}" Height="40"/>
                                                     </StackPanel>
                                                 </StackPanel>
                                             </StackPanel>
