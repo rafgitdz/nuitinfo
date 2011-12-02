@@ -30,6 +30,7 @@ public class GYF implements EntryPoint  {
 	public void onModuleLoad() {
 		RootPanel.get("suscribeForm").add(new suscribeForm());
 		RootPanel.get("loginForm").add(new loginForm());
+		//RootPanel.get("wishListForm").add(new wishListForm());
 	}
 
 }

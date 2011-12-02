@@ -147,6 +147,7 @@
     </Content>
     <Resource Include="twitter.jpg" />
     <Resource Include="fb.jpg" />
+    <Resource Include="logo.png" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />

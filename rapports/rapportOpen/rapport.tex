@@ -1,0 +1,83 @@
+\documentclass[a4paper,francais,titlepage]{report}
+\usepackage[utf8x]{inputenc}  
+%% utf8x support des espaces insécables ' ' au lieu da la macro ~)
+
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{latexsym}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{lscape}   %% pour le mode paysage \begin{landscape}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+% continuité numérotation figures
+\usepackage{chngcntr} 
+\counterwithout{figure}{chapter}
+
+% style général
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+
+\setmarginsrb{2.5cm}{2cm}{2.5cm}{1cm}{0.5cm}{1.5cm}{2cm}{2cm}
+%1 est la marge gauche
+%2 est la marge en haut
+%3 est la marge droite
+%4 est la marge en bas
+%5 fixe la hauteur de l'entête
+%6 fixe la distance entre l'entête et le texte
+%7 fixe la hauteur du pied de page
+%8 fixe la distance entre le texte et le pied de page
+
+%%ressources
+\graphicspath{{../ressources/}}
+
+\begin{document}
+\pagestyle{fancy}
+
+%%%%%%%%% Première page: titre
+\begin{titlepage}
+ \begin{center}
+	\vspace*{3.5cm}
+	\Large \textbf{Gifts4YourFriends} \\
+	\vspace{0.2cm}
+	\small Rapport
+	\vspace{2cm}
+
+	\huge \textbf{Nuit de l'informatique} \\
+	\vspace{0.3cm}
+	\large {Défi Open}
+	\vspace{1.5cm}
+ \end{center}
+ 
+ \begin{flushleft}
+	\normalsize {\hspace{6cm}Responsables de l'événement: \\ 
+				 \hspace{7.0cm} Blanc Xavier \\
+				 \hspace{6.7cm} Bromberg David \\
+				 \hspace{6.6cm} Fleury Emmanuel}
+	\vspace{2cm}
+ \end{flushleft}
+ 
+   \begin{center}
+   \includegraphics[scale=0.3]{logo_bx1.jpg}
+   	\vfill 
+   	\vspace{2cm}
+	\normalsize {Rage Against The Turing Machine\\}
+	\vspace{1.5cm} 
+	{\today}.
+ \end{center}
+\end{titlepage}
+%%%%%%%% Fin première page
+
+\section{Introduction}
+
+\section{Choix de la méthode}
+
+\end{document}	
