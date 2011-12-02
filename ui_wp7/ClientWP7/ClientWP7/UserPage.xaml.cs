@@ -50,7 +50,7 @@ namespace ClientWP7
         }
         private void AddWish_Click(object sender, RoutedEventArgs e)
         {
-            
+            NavigationService.Navigate(new Uri("/WishRegistration.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void ModifyWish_Click(object sender, RoutedEventArgs e)
