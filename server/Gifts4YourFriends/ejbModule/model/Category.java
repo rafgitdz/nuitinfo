@@ -5,10 +5,7 @@
 
 package model;
 
-/**
- *
- * @author mavomoeb
- */
+
 public enum Category {
     SPORT, LITERATURE, AUTOMOBILE,
 }

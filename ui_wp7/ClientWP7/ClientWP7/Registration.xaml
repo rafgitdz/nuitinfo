@@ -33,7 +33,7 @@
                 </StackPanel>
 
                 <StackPanel Margin="20" x:Name="NamePanel" Orientation="Horizontal">
-                    <TextBlock Text="Name " Width="134" VerticalAlignment="Center" Height="33"></TextBlock>
+                    <TextBlock Text="Name :" Width="134" VerticalAlignment="Center" Height="33"></TextBlock>
                     <TextBox Name="tbName" Width="300" LostFocus="tbName_LostFocus" GotFocus="tbName_GotFocus"></TextBox>
                 </StackPanel>
 
