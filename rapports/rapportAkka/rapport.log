@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 04:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 06:59
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -6,20 +6,19 @@ entering extended mode
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
 yphenation, bulgarian, ukrainian, russian, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/report.cls
-Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
 File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -38,7 +37,7 @@ Package: ucs 2004/10/17 UCS: Unicode input support
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2004/10/17 UCS: Unicode global data
 )
-\uc@secondtry=\count88
+\uc@secondtry=\count87
 \uc@combtoks=\toks16
 \uc@combtoksb=\toks17
 \uc@temptokena=\toks18
@@ -58,7 +57,7 @@ Language: frenchb 2009/03/16 v2.3d French support from the babel system
 
 (/usr/share/texmf-texlive/tex/generic/babel/babel.def
 File: babel.def 2008/07/06 v3.8l Babel common definitions
-\babel@savecnt=\count89
+\babel@savecnt=\count88
 \U@D=\dimen103
 )
 
@@ -72,8 +71,8 @@ Package babel Info: Making ; an active character on input line 121.
 Package babel Info: Making ! an active character on input line 122.
 Package babel Info: Making ? an active character on input line 123.
 \FB@Mht=\dimen104
-\std@mcc=\count90
-\dec@mcc=\count91
+\std@mcc=\count89
+\dec@mcc=\count90
 \parindentFFN=\dimen105
 *************************************
 * Local config file frenchb.cfg used
@@ -113,7 +112,7 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 
 (/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
-\Gread@gobject=\count92
+\Gread@gobject=\count91
 ))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
@@ -147,8 +146,8 @@ O)
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
 \@linkdim=\dimen108
-\Hy@linkcounter=\count93
-\Hy@pagecounter=\count94
+\Hy@linkcounter=\count92
+\Hy@pagecounter=\count93
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
@@ -208,7 +207,7 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count95
+\Fld@menulength=\count94
 \Field@Width=\dimen109
 \Fld@charsize=\dimen110
 \Field@toks=\toks21
@@ -223,30 +222,19 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count96
-\c@Item=\count97
-\c@Hfootnote=\count98
+\Hy@abspage=\count95
+\c@Item=\count96
+\c@Hfootnote=\count97
 )
 *hyperref using default driver hpdftex*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count99
+\Fld@listcount=\count98
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 19.
 
 (/usr/share/texmf-texlive/tex/latex/chngcntr/chngcntr.sty
 Package: chngcntr 2009/09/02 v1.0a change counter resetting
-)
-(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
-\fancy@headwidth=\skip43
-\f@ncyO@elh=\skip44
-\f@ncyO@erh=\skip45
-\f@ncyO@olh=\skip46
-\f@ncyO@orh=\skip47
-\f@ncyO@elf=\skip48
-\f@ncyO@erf=\skip49
-\f@ncyO@olf=\skip50
-\f@ncyO@orf=\skip51
 )
 (/usr/share/texmf-texlive/tex/latex/vmargin/vmargin.sty
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
@@ -257,38 +245,38 @@ Package: vmargin 2004/07/15 V2.5 set document margins (VK)
 ) (./rapport.aux)
 \openout1 = `rapport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
  (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \degres on input line 42.
-LaTeX Info: Redefining \dots on input line 42.
-LaTeX Info: Redefining \up on input line 42.
+LaTeX Info: Redefining \degres on input line 40.
+LaTeX Info: Redefining \dots on input line 40.
+LaTeX Info: Redefining \up on input line 40.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count100
+\scratchcounter=\count99
 \scratchdimen=\dimen113
 \scratchbox=\box26
-\nofMPsegments=\count101
-\nofMParguments=\count102
+\nofMPsegments=\count100
+\nofMParguments=\count101
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count103
+\MPscratchCnt=\count102
 \MPscratchDim=\dimen114
-\MPnumerator=\count104
+\MPnumerator=\count103
 \everyMPtoPDFconversion=\toks23
 ) (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
@@ -298,7 +286,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package hyperref Info: Link coloring ON on input line 42.
+Package hyperref Info: Link coloring ON on input line 40.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -306,10 +294,10 @@ Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count105
+\c@section@level=\count104
 )
-LaTeX Info: Redefining \ref on input line 42.
-LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
  (./rapport.out)
 (./rapport.out)
 \@outlinefile=\write3
@@ -319,35 +307,113 @@ LaTeX Info: Redefining \pageref on input line 42.
  (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-<ressources/logo_bx1.jpg, id=11, 337.26pt x 364.36125pt>
-File: ressources/logo_bx1.jpg Graphic file (type jpg)
+<../ressources/logo_bx1.jpg, id=15, 337.26pt x 364.36125pt>
+File: ../ressources/logo_bx1.jpg Graphic file (type jpg)
 
-<use ressources/logo_bx1.jpg> [1
+<use ../ressources/logo_bx1.jpg> [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ressources/logo_bx1.jpg>
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../ressources/logo_bx1.jpg
+>]
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-1.def
+File: uni-1.def 2004/10/17 UCS: Unicode data U+0100..U+01FF
+)
+<../ressources/brainstorming7.jpeg, id=26, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming7.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming7.jpeg>
+<../ressources/brainstorming4.jpeg, id=27, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming4.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming4.jpeg>
+<../ressources/brainstorming5.jpeg, id=28, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming5.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming5.jpeg>
+Overfull \hbox (52.1305pt too wide) in paragraph at lines 89--91
+[][]   []   [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--91
+
+ []
+
+<../ressources/solo.jpeg, id=29, 411.136pt x 308.352pt>
+File: ../ressources/solo.jpeg Graphic file (type jpg)
+
+<use ../ressources/solo.jpeg>
+<../ressources/binome.jpeg, id=30, 411.136pt x 308.352pt>
+File: ../ressources/binome.jpeg Graphic file (type jpg)
+
+<use ../ressources/binome.jpeg>
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{document}
-                    [1] (./rapport.aux) ) 
+l.94 
+      [1 <../ressources/brainstorming7.jpeg> <../ressources/brainstorming4.jpeg
+> <../ressources/brainstorming5.jpeg>]
+<../ressources/brainstorming.jpeg, id=40, 96.36pt x 72.27pt>
+File: ../ressources/brainstorming.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming.jpeg>
+<../ressources/brainstorming3.jpeg, id=41, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming3.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming3.jpeg>
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+<../ressources/gi.jpeg, id=42, 256.96pt x 192.72pt>
+File: ../ressources/gi.jpeg Graphic file (type jpg)
+
+<use ../ressources/gi.jpeg>
+<../ressources/shema.jpeg, id=43, 411.136pt x 308.352pt>
+File: ../ressources/shema.jpeg Graphic file (type jpg)
+
+<use ../ressources/shema.jpeg>
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+<../ressources/sprint.jpeg, id=44, 256.96pt x 192.72pt>
+File: ../ressources/sprint.jpeg Graphic file (type jpg)
+
+<use ../ressources/sprint.jpeg>
+<../ressources/tache.jpg, id=45, 2569.6pt x 1927.2pt>
+File: ../ressources/tache.jpg Graphic file (type jpg)
+
+<use ../ressources/tache.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 100--102
+
+ []
+
+[2 <../ressources/solo.jpeg> <../ressources/binome.jpeg> <../ressources/brainst
+orming.jpeg> <../ressources/brainstorming3.jpeg> <../ressources/gi.jpeg> <../re
+ssources/shema.jpeg> <../ressources/sprint.jpeg> <../ressources/tache.jpg>]
+[3] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 6017 strings out of 494818
- 84574 string characters out of 1178666
- 158730 words of memory out of 3000000
- 9101 multiletter control sequences out of 15000+50000
- 9844 words of font info for 22 fonts, out of 3000000 for 9000
+ 6556 strings out of 494818
+ 90990 string characters out of 1178666
+ 161179 words of memory out of 3000000
+ 9620 multiletter control sequences out of 15000+50000
+ 10577 words of font info for 23 fonts, out of 3000000 for 9000
  212 hyphenation exceptions out of 8191
- 38i,11n,45p,307b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/cm-s
-uper/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb>
-Output written on rapport.pdf (2 pages, 160650 bytes).
+ 38i,5n,45p,716b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
+}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfrm1200.pfb>
+Output written on rapport.pdf (4 pages, 2812947 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 85 words of extra memory for PDF output out of 10000 (max. 10000000)
 
