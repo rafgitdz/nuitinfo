@@ -1,6 +1,0 @@
-INDEX VERSION 1.122+/home/matthieu/nuitinfo/server/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
-626655795.index
-1860022142.index
-531522072.index
-3535520557.index
-2826385093.index
