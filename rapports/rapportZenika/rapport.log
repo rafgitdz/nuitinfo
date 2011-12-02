@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 04:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 05:20
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -319,35 +319,52 @@ LaTeX Info: Redefining \pageref on input line 42.
  (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-<ressources/logo_bx1.jpg, id=11, 337.26pt x 364.36125pt>
-File: ressources/logo_bx1.jpg Graphic file (type jpg)
 
-<use ressources/logo_bx1.jpg> [1
+LaTeX Warning: File `logo_bx1.jpg' not found on input line 69.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ressources/logo_bx1.jpg>
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+
+! Package pdftex.def Error: File `logo_bx1.jpg' not found.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69    \includegraphics[scale=0.3]{logo_bx1.jpg}
+                                                 
+Using draft setting for this image.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 69.
+(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
+ination with the same identifier (name{page.1}) has been already used, duplicat
+e ignored
 <to be read again> 
                    \relax 
-l.83 \end{document}
+l.90 \end{document}
                     [1] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 6017 strings out of 494818
- 84574 string characters out of 1178666
- 158730 words of memory out of 3000000
- 9101 multiletter control sequences out of 15000+50000
- 9844 words of font info for 22 fonts, out of 3000000 for 9000
+ 6033 strings out of 494818
+ 85064 string characters out of 1178666
+ 161733 words of memory out of 3000000
+ 9112 multiletter control sequences out of 15000+50000
+ 10157 words of font info for 23 fonts, out of 3000000 for 9000
  212 hyphenation exceptions out of 8191
- 38i,11n,45p,307b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,45p,741b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-s
 uper/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb>
-Output written on rapport.pdf (2 pages, 160650 bytes).
+</usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sftt1000.pfb>
+Output written on rapport.pdf (2 pages, 117871 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 22 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 53 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
