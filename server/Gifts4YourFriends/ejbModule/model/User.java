@@ -15,184 +15,183 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Transient;
 
-
 @Entity
-public class User implements Serializable{
-    private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long _id;
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long _id;
 
-  
-    private String _name;
+	private String _name;
 
- 
-    private String _lastname;
+	private String _lastname;
 
-    private Date _birthDate;
+	private Date _birthDate;
 
-    private String _email;
+	private String _email;
 
-    private String _nickname;
+	private String _nickname;
 
-    private String _password;
+	private String _password;
 
-    private Boolean _sex;
-   
-    @Transient
-    private List<User> _friends;
+	private Boolean _sex;
 
-  @Transient
-    private List<Wish> _wishList;
+	@Transient
+	private List<User> _friends;
 
-    public User() {
-        _friends = new ArrayList<User>();
-        _wishList = new ArrayList<Wish>();
-    }
+	@Transient
+	private List<Wish> _wishList;
 
-    public User(String name, String lastname, String email, String nickname,
-                String password) {
-        _name = name;
-        _lastname = lastname;
-        _email = email;
-        _nickname = nickname;
-        _password = password;
-        _friends = new ArrayList<User>();
-        _wishList = new ArrayList<Wish>();
-    }
+	public User() {
+		_friends = new ArrayList<User>();
+		_wishList = new ArrayList<Wish>();
+	}
 
-    public User(String name, String lastname, Date birthDate, String email,
-                String nickname, String password, Boolean sex) {
-        _name = name;
-        _lastname = lastname;
-        _birthDate = birthDate;
-        _email = email;
-        _nickname = nickname;
-        _password = password;
-        _sex = sex;
-        _friends = new ArrayList<User>();
-        _wishList = new ArrayList<Wish>();
-    }
+	public User(String name, String lastname, String email, String nickname,
+			String password) {
+		_name = name;
+		_lastname = lastname;
+		_email = email;
+		_nickname = nickname;
+		_password = password;
+		_friends = new ArrayList<User>();
+		_wishList = new ArrayList<Wish>();
+	}
 
-     @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (_id != null ? _id.hashCode() : 0);
-        return hash;
-    }
+	public User(String name, String lastname, Date birthDate, String email,
+			String nickname, String password, Boolean sex) {
+		_name = name;
+		_lastname = lastname;
+		_birthDate = birthDate;
+		_email = email;
+		_nickname = nickname;
+		_password = password;
+		_sex = sex;
+		_friends = new ArrayList<User>();
+		_wishList = new ArrayList<Wish>();
+	}
 
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof User)) {
-            return false;
-        }
-        User other = (User) object;
-        if ((this._id == null && other._id != null) || (this._id != null && !this._id.equals(other._id))) {
-            return false;
-        }
-        return true;
-    }
+	@Override
+	public int hashCode() {
+		int hash = 0;
+		hash += (_id != null ? _id.hashCode() : 0);
+		return hash;
+	}
 
-    @Override
-    public String toString() {
-        return "model.user[id=" + _id + "]";
-    }
-/******************************  GETTERS **************************************/
-    public Date getBirthDate() {
-        return _birthDate;
-    }
+	@Override
+	public boolean equals(Object object) {
+		// TODO: Warning - this method won't work in the case the id fields are
+		// not set
+		if (!(object instanceof User)) {
+			return false;
+		}
+		User other = (User) object;
+		if ((this._id == null && other._id != null)
+				|| (this._id != null && !this._id.equals(other._id))) {
+			return false;
+		}
+		return true;
+	}
 
-    public String getEmail() {
-        return _email;
-    }
+	@Override
+	public String toString() {
+		return "model.user[id=" + _id + "]";
+	}
 
-    public List<User> getFriends() {
-        return _friends;
-    }
+	/****************************** GETTERS **************************************/
+	public Date getBirthDate() {
+		return _birthDate;
+	}
 
-    public String getLastname() {
-        return _lastname;
-    }
+	public String getEmail() {
+		return _email;
+	}
 
-    public String getName () {
-        return _name;
-    }
+	public List<User> getFriends() {
+		return _friends;
+	}
 
-    public String getNickname() {
-        return _nickname;
-    }
+	public String getLastname() {
+		return _lastname;
+	}
 
-    public String getPassword() {
-        return _password;
-    }
+	public String getName() {
+		return _name;
+	}
 
-    public Boolean getSex() {
-        return _sex;
-    }
+	public String getNickname() {
+		return _nickname;
+	}
 
-    
-    public Long getId() {
-        return _id;
-    }
+	public String getPassword() {
+		return _password;
+	}
 
-/******************************  SETTERS **************************************/
+	public Boolean getSex() {
+		return _sex;
+	}
 
-    public void setBirthDate(Date _birthDate) {
-        this._birthDate = _birthDate;
-    }
+	public Long getId() {
+		return _id;
+	}
 
-    public void setEmail(String _email) {
-        this._email = _email;
-    }
+	/****************************** SETTERS **************************************/
 
-    public void setFriends(List<User> _friends) {
-        this._friends = _friends;
-    }
+	public void setBirthDate(Date _birthDate) {
+		this._birthDate = _birthDate;
+	}
 
-    public void setId(Long id) {
-        this._id = id;
-    }
+	public void setEmail(String _email) {
+		this._email = _email;
+	}
 
-    public void setLastname(String _lastname) {
-        this._lastname = _lastname;
-    }
+	public void setFriends(List<User> _friends) {
+		this._friends = _friends;
+	}
 
-    public void setName(String _name) {
-        this._name = _name;
-    }
+	public void setId(Long id) {
+		this._id = id;
+	}
 
-    public void setNickname(String _nickname) {
-        this._nickname = _nickname;
-    }
+	public void setLastname(String _lastname) {
+		this._lastname = _lastname;
+	}
 
-    public void setPassword(String _password) {
-        this._password = _password;
-    }
+	public void setName(String _name) {
+		this._name = _name;
+	}
 
-    public void setSex(Boolean _sex) {
-        this._sex = _sex;
-    }
+	public void setNickname(String _nickname) {
+		this._nickname = _nickname;
+	}
 
-/*****************************************************************************/
+	public void setPassword(String _password) {
+		this._password = _password;
+	}
 
-    public void addFriend(User friend) {
-        _friends.add(friend);
-    }
+	public void setSex(Boolean _sex) {
+		this._sex = _sex;
+	}
 
-    public void removeFriend(User friend) {
-        _friends.remove(friend);
-    }
+	/*****************************************************************************/
 
-    public void addWish(Wish wish) {
-        _wishList.add(wish);
-    }
+	public void addFriend(User friend) {
+		_friends.add(friend);
+	}
 
-    public void removeWish(Wish wish) {
-        _wishList.remove(wish);
-    }
+	public void removeFriend(User friend) {
+		_friends.remove(friend);
+	}
 
-    public void removeWish(Integer position) {
-        _wishList.remove(position);
-    }
+	public void addWish(Wish wish) {
+		_wishList.add(wish);
+	}
+
+	public void removeWish(Wish wish) {
+		_wishList.remove(wish);
+	}
+
+	public void removeWish(Integer position) {
+		_wishList.remove(position);
+	}
 }
