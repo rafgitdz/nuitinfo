@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 05:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 06:18
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -319,52 +319,92 @@ LaTeX Info: Redefining \pageref on input line 42.
  (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
+<../ressources/logo_bx1.jpg, id=15, 337.26pt x 364.36125pt>
+File: ../ressources/logo_bx1.jpg Graphic file (type jpg)
 
-LaTeX Warning: File `logo_bx1.jpg' not found on input line 69.
+<use ../ressources/logo_bx1.jpg> [1
 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../ressources/logo_bx1.jpg
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
-! Package pdftex.def Error: File `logo_bx1.jpg' not found.
+ []
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69    \includegraphics[scale=0.3]{logo_bx1.jpg}
-                                                 
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<../ressources/backlog.jpeg, id=26, 96.36pt x 72.27pt>
+File: ../ressources/backlog.jpeg Graphic file (type jpg)
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 69.
-(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [1
+<use ../ressources/backlog.jpeg>
+<../ressources/backlog2.jpeg, id=27, 96.36pt x 72.27pt>
+File: ../ressources/backlog2.jpeg Graphic file (type jpg)
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
-ination with the same identifier (name{page.1}) has been already used, duplicat
-e ignored
+<use ../ressources/backlog2.jpeg>
+<../ressources/brainstorming.jpeg, id=28, 96.36pt x 72.27pt>
+File: ../ressources/brainstorming.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming.jpeg>
+<../ressources/brainstorming2.jpeg, id=29, 256.96pt x 192.72pt>
+File: ../ressources/brainstorming2.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming2.jpeg>
+<../ressources/brainstorming3.jpeg, id=30, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming3.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming3.jpeg>
+<../ressources/brainstorming4.jpeg, id=31, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming4.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming4.jpeg>
+<../ressources/brainstorming5.jpeg, id=32, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming5.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming5.jpeg>
+<../ressources/brainstorming6.jpeg, id=33, 96.36pt x 72.27pt>
+File: ../ressources/brainstorming6.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming6.jpeg>
+<../ressources/brainstorming7.jpeg, id=34, 411.136pt x 308.352pt>
+File: ../ressources/brainstorming7.jpeg Graphic file (type jpg)
+
+<use ../ressources/brainstorming7.jpeg>
+<../ressources/tableau.jpeg, id=35, 256.96pt x 192.72pt>
+File: ../ressources/tableau.jpeg Graphic file (type jpg)
+
+<use ../ressources/tableau.jpeg>
+<../ressources/tableau2.jpeg, id=36, 256.96pt x 192.72pt>
+File: ../ressources/tableau2.jpeg Graphic file (type jpg)
+
+<use ../ressources/tableau2.jpeg>
+<../ressources/tableau3.jpeg, id=37, 256.96pt x 192.72pt>
+File: ../ressources/tableau3.jpeg Graphic file (type jpg)
+
+<use ../ressources/tableau3.jpeg>pdfTeX warning (ext4): destination with the sa
+me identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.90 \end{document}
-                    [1] (./rapport.aux) ) 
+l.100 \newpage
+               [1 <../ressources/backlog.jpeg> <../ressources/backlog2.jpeg> <.
+./ressources/brainstorming.jpeg> <../ressources/brainstorming2.jpeg> <../ressou
+rces/brainstorming3.jpeg> <../ressources/brainstorming4.jpeg> <../ressources/br
+ainstorming5.jpeg> <../ressources/brainstorming6.jpeg> <../ressources/brainstor
+ming7.jpeg> <../ressources/tableau.jpeg> <../ressources/tableau2.jpeg> <../ress
+ources/tableau3.jpeg>] [2] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 6033 strings out of 494818
- 85064 string characters out of 1178666
- 161733 words of memory out of 3000000
- 9112 multiletter control sequences out of 15000+50000
- 10157 words of font info for 23 fonts, out of 3000000 for 9000
+ 6081 strings out of 494818
+ 86487 string characters out of 1178666
+ 163733 words of memory out of 3000000
+ 9150 multiletter control sequences out of 15000+50000
+ 9844 words of font info for 22 fonts, out of 3000000 for 9000
  212 hyphenation exceptions out of 8191
- 38i,11n,45p,741b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/cm-s
-uper/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sftt1000.pfb>
-Output written on rapport.pdf (2 pages, 117871 bytes).
+ 38i,11n,45p,713b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/c
+m-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.
+pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texm
+f/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public
+/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
+fb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb>
+Output written on rapport.pdf (3 pages, 1444219 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 69 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
