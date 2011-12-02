@@ -1,0 +1,3 @@
+# Module gyf
+# RPC service class, partial path of RPC policy file
+com.nuitinfo.gyf.client.GreetingService, FA0B746962B3A7B7846BF659C04D598D.gwt.rpc

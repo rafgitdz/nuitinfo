@@ -48,10 +48,9 @@ namespace ClientWP7
                 
             }
         }
-
         private void AddWish_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/WishRegistration.xaml", UriKind.RelativeOrAbsolute));
+            
         }
 
         private void ModifyWish_Click(object sender, RoutedEventArgs e)
@@ -66,14 +65,15 @@ namespace ClientWP7
 
         private void AddContact_Click(object sender, RoutedEventArgs e)
         {
-            List<string> contactListDure = new List<string>();
+            NavigationService.Navigate(new Uri("/SendInvite.xaml", UriKind.RelativeOrAbsolute));
+            /*List<string> contactListDure = new List<string>();
             IEnumerable<string> temp;
             temp = (IEnumerable<string>)ContactList.ItemsSource;
             if (temp != null)
                 contactListDure = temp.ToList();
 
             contactListDure.Add("Contact");
-            ContactList.ItemsSource = contactListDure;
+            ContactList.ItemsSource = contactListDure;*/
         }
 
         private void ModifyContact_Click(object sender, RoutedEventArgs e)
@@ -88,7 +88,7 @@ namespace ClientWP7
 
         private void CreateGroupContact_Click(object sender, RoutedEventArgs e)
         {
-
+            NavigationService.Navigate(new Uri("/GroupManagement.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)

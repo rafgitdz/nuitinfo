@@ -8,6 +8,8 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
+import model.user.User;
+
 
 /**
  *
