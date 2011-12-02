@@ -21,23 +21,66 @@
             <!--Élément un de panorama-->
             <controls:PanoramaItem Header="wishlist">
                 <StackPanel Name="WishlistPanel">
-                    <ScrollViewer Name="WishlistScrollViewer">
-                      
-                    </ScrollViewer>
-                    <TextBlock Height="100" Name="textBlock1" Text="TextBlock" />
-                    <TextBlock Height="100" Name="textBlock2" Text="TextBlock" />
-                    <TextBlock Height="100" Name="textBlock3" Text="TextBlock" />
-                    <TextBlock Height="100" Name="textBlock4" Text="TextBlock" />
-                    <TextBlock Height="100" Name="textBlock5" Text="TextBlock" />
+                    <Grid Height="83" Name="grid1" Width="422">
+                        <Button Content="Add" Name="AddWish" Margin="-3,5,324,21" FontSize="14" Click="AddWish_Click" />
+                        <Button Content="Delete" Name="DeleteWish" Width="100" Margin="0,5,7,21" FontSize="14" HorizontalAlignment="Right" Click="DeleteWish_Click" />
+                        <Button Content="Modify" FontSize="14" HorizontalAlignment="Right" Margin="0,5,166,21" Name="ModifyWish" Width="100" Click="ModifyWish_Click" />
+                    </Grid>
+                    <ScrollViewer Name="WishlistScrollViewer">     
+                        <ListBox Height="494" Name="wishList" Width="413">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Width="400" Height="120">
+                                        <Button.Content>
+                                            <StackPanel Orientation="Horizontal" Height="80" Width="400">
+                                                <StackPanel Orientation="Vertical" Height="80">
+                                                    <StackPanel Orientation="Horizontal" Height="40" >
+                                                        <TextBlock Width="200" FontSize="22" Text="WishT" Height="40"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Button.Content>
+                                    </Button>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </ScrollViewer>  
                 </StackPanel>
 
             </controls:PanoramaItem>
 
             <!--Élément deux de panorama-->
             <controls:PanoramaItem Header="contacts">
-                <Grid/>
+                <StackPanel Name="ContactlistPanel">
+                    <Grid Height="83" Name="grid2" Width="422">
+                        <Button Content="Add" Name="AddContact" Margin="-3,-5,324,31" FontSize="14" Click="AddContact_Click" />
+                        <Button Content="Delete" Name="DeleteContact" Width="100" Margin="0,-5,7,31" FontSize="14" HorizontalAlignment="Right" Click="DeleteContact_Click" />
+                        <Button Content="Modify" FontSize="14" HorizontalAlignment="Right" Margin="0,-5,166,31" Name="ModifyContact" Width="100" Click="ModifyContact_Click" />
+                        <Button Content="Group" FontSize="14" HorizontalAlignment="Right" Margin="0,34,166,-8" Name="CreateGroupContact" Width="100" Click="CreateGroupContact_Click" />
+                    </Grid>
+                    <ScrollViewer Name="ContactlistScrollViewer">
+                        <ListBox Height="494" Name="ContactList" Width="413">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <Button Width="400" Height="120">
+                                        <Button.Content>
+                                            <StackPanel Orientation="Horizontal" Height="80" Width="400">
+                                                <StackPanel Orientation="Vertical" Height="80">
+                                                    <StackPanel Orientation="Horizontal" Height="40" >
+                                                        <TextBlock Width="200" FontSize="22" Text="ContactT" Height="40"/>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </StackPanel>
+                                        </Button.Content>
+                                    </Button>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </ScrollViewer>
+                </StackPanel>
             </controls:PanoramaItem>
         </controls:Panorama>
+        <Button Content="Profile" Height="72" HorizontalAlignment="Left" Margin="12,134,0,0" Name="button1" VerticalAlignment="Top" Width="201" Click="button1_Click" />
     </Grid>
 
     <!--Les applications basées sur des panoramas ne devraient pas afficher d'ApplicationBar-->

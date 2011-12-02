@@ -12,11 +12,13 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using System.ComponentModel;
 
 namespace ClientWP7
 {
     public partial class App : Application
     {
+        
         /// <summary>
         /// Permet d'accéder facilement au frame racine de l'application téléphonique.
         /// </summary>
