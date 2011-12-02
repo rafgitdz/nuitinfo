@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ClientWP7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" d:DesignHeight="768" d:DesignWidth="480">
+
+    <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="81"/>
+            <RowDefinition Height="687*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contient le nom de l'application et le titre de la page-->
+        <!--ContentPanel - placez tout contenu supplémentaire ici-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,35,12,4">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="290*" />
+                <RowDefinition Height="368" />
+            </Grid.RowDefinitions>
+            <TextBox Height="62" HorizontalAlignment="Right" Margin="0,66,0,0" Name="nicknameBox" Text="Your nickname" VerticalAlignment="Top" Width="287" FontSize="18" GotFocus="nicknameBox_GotFocus" LostFocus="nicknameBox_LostFocus" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,81,0,0" Name="textBlock1" Text="Nickname :" VerticalAlignment="Top" Width="144" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,163,0,0" Name="textBlock2" Text="Password :" VerticalAlignment="Top" Width="144" />
+            <Button Content="Create your account" Height="60" HorizontalAlignment="Left" Margin="14,199,0,0" Name="createAccount" VerticalAlignment="Top" Width="220" FontSize="18" Click="createAccount_Click" />
+            <Button Content="Login" Height="60" HorizontalAlignment="Left" Margin="281,199,0,0" Name="loginButton" VerticalAlignment="Top" Width="160" FontSize="16" Click="loginButton_Click" />
+            <TextBlock FontSize="28" Margin="92,0,83,620" Name="textBlock3" Style="{StaticResource PhoneTextNormalStyle}" Text="Authentification" TextAlignment="Center" VerticalAlignment="Center" />
+            <TextBox FontSize="18" Height="62" HorizontalAlignment="Left" Margin="168,37,0,0" Name="searchUserBox" Text="user" VerticalAlignment="Top" Width="287" Grid.Row="1" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,52,0,0" Name="textBlock4" Text="Search user :" VerticalAlignment="Top" Width="144" Grid.Row="1" />
+            <PasswordBox Height="59" HorizontalAlignment="Left" Margin="170,146,0,0" Name="passwordBox" VerticalAlignment="Top" Width="287" Password="Your password" GotFocus="passwordBox_GotFocus" LostFocus="passwordBox_LostFocus" FontSize="18" PasswordChar="●" />
+            <Button FontSize="16" Height="60" HorizontalAlignment="Left" Margin="290,90,0,0" Name="button1" VerticalAlignment="Top" Width="160" Grid.Row="1" Content="Search" Click="button1_Click" />
+        </Grid>
+        <TextBlock x:Name="ApplicationTitle" Text="Gift4YourFriends" Style="{StaticResource PhoneTextNormalStyle}" Margin="181,0,18,0" TextAlignment="Center" FontSize="28" VerticalAlignment="Center" />
+        <Image Height="64" HorizontalAlignment="Left" Margin="4,4,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="78" />
+    </Grid>
+ 
+    <!--Exemple de code illustrant l'utilisation d'ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Bouton 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Bouton 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="ÉlémentMenu 1"/>
+                <shell:ApplicationBarMenuItem Text="ÉlémentMenu 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
