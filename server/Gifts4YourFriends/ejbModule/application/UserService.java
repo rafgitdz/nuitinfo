@@ -11,7 +11,7 @@ import model.user.Wish;
 @Stateless
 public class UserService implements UserServiceLocal{
 
-	public Integer CreateAccount(
+	public Integer createAccount(
 		    String name,
 		    String lastname,
 		    Date birthday,

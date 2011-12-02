@@ -12,12 +12,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.ManyToMany;
 
 
 @Entity
 public class Wish implements Serializable{
     private static final long serialVersionUID = 1L;
+    
    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long _id;
@@ -26,9 +27,8 @@ public class Wish implements Serializable{
 
     private String _description;
 
-   //@ManyToMany
-    @Transient
-    private List<Category> _categories;
+   @ManyToMany
+   private List<Category> _categories;
 
     public Wish() {
         this._categories = new ArrayList<Category>();

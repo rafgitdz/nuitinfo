@@ -5,7 +5,6 @@
 
 package model;
 
-
 public enum Category {
-    SPORT, LITERATURE, AUTOMOBILE,
+	SPORT, LITERATURE, AUTOMOBILE,
 }

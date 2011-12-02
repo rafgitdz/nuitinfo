@@ -1,4 +1,3 @@
-
 package model.user;
 
 import java.io.Serializable;
@@ -6,196 +5,196 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Transient;
-
-
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
-public class User implements Serializable{
-    private static final long serialVersionUID = 1L;
-    
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long _id;
+public class User implements Serializable {
+	private static final long serialVersionUID = 1L;
 
-  
-    private String _name;
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long _id;
 
- 
-    private String _lastname;
+	private String _name;
 
-    private Date _birthDate;
+	private String _lastname;
 
-    private String _email;
+	private Date _birthDate;
 
-    private String _nickname;
+	private String _email;
 
-    private String _password;
+	private String _nickname;
 
-    private Boolean _sex;
-   
-    @Transient
-    private List<User> _friends;
+	private String _password;
 
-  @Transient
-    private List<Wish> _wishList;
+	private Boolean _sex;
 
-    public User() {
-        _friends = new ArrayList<User>();
-        _wishList = new ArrayList<Wish>();
-    }
+	@ManyToMany(targetEntity = User.class)
+	private List<User> _friends;
 
-    public User(String name, String lastname, String email, String nickname,
-                String password, Integer sex) {
-        _name = name;
-        _lastname = lastname;
-        _email = email;
-        _nickname = nickname;
-        _password = password;
-        _friends = new ArrayList<User>();
-        _wishList = new ArrayList<Wish>();
-    }
+	@OneToMany(cascade = CascadeType.ALL, targetEntity = Wish.class)
+	private List<Wish> _wishList;
 
-    public User(String name, String lastname, Date birthDate, String email,
-                String nickname, String password, Boolean sex) {
-        _name = name;
-        _lastname = lastname;
-        _birthDate = birthDate;
-        _email = email;
-        _nickname = nickname;
-        _password = password;
-        _sex = sex;
-        _friends = new ArrayList<User>();
-        _wishList = new ArrayList<Wish>();
-    }
+	public User() {
+		_friends = new ArrayList<User>();
+		_wishList = new ArrayList<Wish>();
+	}
 
-     @Override
-    public int hashCode() {
-        int hash = 0;
-        hash += (_id != null ? _id.hashCode() : 0);
-        return hash;
-    }
+	public User(String name, String lastname, String email, String nickname,
+			String password, Integer sex) {
+		_name = name;
+		_lastname = lastname;
+		_email = email;
+		_nickname = nickname;
+		_password = password;
+		_friends = new ArrayList<User>();
+		_wishList = new ArrayList<Wish>();
+	}
 
-    @Override
-    public boolean equals(Object object) {
-        // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof User)) {
-            return false;
-        }
-        User other = (User) object;
-        if ((this._id == null && other._id != null) || (this._id != null && !this._id.equals(other._id))) {
-            return false;
-        }
-        return true;
-    }
+	public User(String name, String lastname, Date birthDate, String email,
+			String nickname, String password, Boolean sex) {
+		_name = name;
+		_lastname = lastname;
+		_birthDate = birthDate;
+		_email = email;
+		_nickname = nickname;
+		_password = password;
+		_sex = sex;
+		_friends = new ArrayList<User>();
+		_wishList = new ArrayList<Wish>();
+	}
 
-    @Override
-    public String toString() {
-        return "model.user[id=" + _id + "]";
-    }
-/******************************  GETTERS **************************************/
-    public Date getBirthDate() {
-        return _birthDate;
-    }
+	@Override
+	public int hashCode() {
+		int hash = 0;
+		hash += (_id != null ? _id.hashCode() : 0);
+		return hash;
+	}
 
-    public String getEmail() {
-        return _email;
-    }
+	@Override
+	public boolean equals(Object object) {
+		// TODO: Warning - this method won't work in the case the id fields are
+		// not set
+		if (!(object instanceof User)) {
+			return false;
+		}
+		User other = (User) object;
+		if ((this._id == null && other._id != null)
+				|| (this._id != null && !this._id.equals(other._id))) {
+			return false;
+		}
+		return true;
+	}
 
-    public List<User> getFriends() {
-        return _friends;
-    }
+	@Override
+	public String toString() {
+		return "model.user[id=" + _id + "]";
+	}
 
-    public String getLastname() {
-        return _lastname;
-    }
+	/****************************** GETTERS **************************************/
+	public Date getBirthDate() {
+		return _birthDate;
+	}
 
-    public String getName () {
-        return _name;
-    }
+	public String getEmail() {
+		return _email;
+	}
 
-    public String getNickname() {
-        return _nickname;
-    }
+	public List<User> getFriends() {
+		return _friends;
+	}
 
-    public String getPassword() {
-        return _password;
-    }
+	public String getLastname() {
+		return _lastname;
+	}
 
-    public Boolean getSex() {
-        return _sex;
-    }
+	public String getName() {
+		return _name;
+	}
 
-    
-    public Long getId() {
-        return _id;
-    }
+	public String getNickname() {
+		return _nickname;
+	}
 
-/******************************  SETTERS **************************************/
+	public String getPassword() {
+		return _password;
+	}
 
-    public void setBirthDate(Date _birthDate) {
-        this._birthDate = _birthDate;
-    }
+	public Boolean getSex() {
+		return _sex;
+	}
 
-    public void setEmail(String _email) {
-        this._email = _email;
-    }
+	public Long getId() {
+		return _id;
+	}
 
-    public void setFriends(List<User> _friends) {
-        this._friends = _friends;
-    }
+	/****************************** SETTERS **************************************/
 
-    public void setId(Long id) {
-        this._id = id;
-    }
+	public void setBirthDate(Date _birthDate) {
+		this._birthDate = _birthDate;
+	}
 
-    public void setLastname(String _lastname) {
-        this._lastname = _lastname;
-    }
+	public void setEmail(String _email) {
+		this._email = _email;
+	}
 
-    public void setName(String _name) {
-        this._name = _name;
-    }
+	public void setFriends(List<User> _friends) {
+		this._friends = _friends;
+	}
 
-    public void setNickname(String _nickname) {
-        this._nickname = _nickname;
-    }
+	public void setId(Long id) {
+		this._id = id;
+	}
 
-    public void setPassword(String _password) {
-        this._password = _password;
-    }
+	public void setLastname(String _lastname) {
+		this._lastname = _lastname;
+	}
 
-    public void setSex(Boolean _sex) {
-        this._sex = _sex;
-    }
+	public void setName(String _name) {
+		this._name = _name;
+	}
 
-/*****************************************************************************/
+	public void setNickname(String _nickname) {
+		this._nickname = _nickname;
+	}
 
-    public void addFriend(User friend) {
-        _friends.add(friend);
-    }
+	public void setPassword(String _password) {
+		this._password = _password;
+	}
 
-    public void removeFriend(User friend) {
-        _friends.remove(friend);
-    }
+	public void setSex(Boolean _sex) {
+		this._sex = _sex;
+	}
 
-    public void addWish(Wish wish) {
-        _wishList.add(wish);
-    }
+	/*****************************************************************************/
 
-    public void removeWish(Wish wish) {
-        _wishList.remove(wish);
-    }
+	public void addFriend(User friend) {
+		_friends.add(friend);
+	}
 
-    public void removeWish(Integer position) {
-        _wishList.remove(position);
-    }
+	public void removeFriend(User friend) {
+		_friends.remove(friend);
+	}
+
+	public void addWish(Wish wish) {
+		_wishList.add(wish);
+	}
+
+	public void removeWish(Wish wish) {
+		_wishList.remove(wish);
+	}
+
+	public void removeWish(Integer position) {
+		_wishList.remove(position);
+	}
 
 	public void setWishList(List<Wish> wishlist) {
-		_wishList = wishlist;		
+		_wishList = wishlist;
 	}
 }
