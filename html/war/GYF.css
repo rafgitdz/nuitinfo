@@ -32,3 +32,52 @@ h1 {
 #closeButton {
   margin: 15px 6px 6px;
 }
+
+body {
+font-family: "Arial";
+font-size: 16px;
+}
+
+#header {
+height: 170px;
+background-color: #FFB74C;
+font-size: 25px;
+color: white;
+width: 100%;
+}
+
+#content {
+	height: 600px;
+}
+
+#header #logo {
+	margin-right: 200px;
+	float: left;
+}
+
+#header #slogan {	
+	float: left;
+	padding-top: 40px;
+	margin-right: 200px;
+}
+
+#header #loginForm {
+	float: right;
+	text-align: center;
+}
+
+hr {
+width: 100%;
+}
+
+#footer {
+font-weight: bold;	
+}
+
+#content {
+	margin-top: 50px;
+}
+
+#suscribeForm {
+	float: right;
+}

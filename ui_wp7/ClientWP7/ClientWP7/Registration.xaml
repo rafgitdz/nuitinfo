@@ -71,7 +71,7 @@
             </StackPanel>
         </ScrollViewer>
         <TextBlock x:Name="ApplicationTitle" Text="Gift4YourFriends" Style="{StaticResource PhoneTextNormalStyle}" Margin="181,0,18,0" TextAlignment="Center" FontSize="28" VerticalAlignment="Center" />
-        <Image Height="64" HorizontalAlignment="Left" Margin="4,4,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="78" />
+        <Image Height="70" HorizontalAlignment="Left" Source="logo.png" Margin="4,4,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="100" />
     </Grid>
  
     <!--Exemple de code illustrant l'utilisation de l'ApplicationBar-->
