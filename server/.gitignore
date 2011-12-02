@@ -1,5 +1,4 @@
 build/
 *.properties
 .metadata/
-jboss*/
 *~
