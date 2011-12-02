@@ -16,15 +16,11 @@
     <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="81"/>
+            <RowDefinition Height="687*"/>
         </Grid.RowDefinitions>
 
         <!--TitlePanel contient le nom de l'application et le titre de la page-->
-        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock x:Name="ApplicationTitle" Text="MON APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock x:Name="PageTitle" Text="nom de la page" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
-        </StackPanel>
 
         <!--ContentPanel - placez tout contenu supplémentaire ici-->
 
@@ -32,54 +28,58 @@
 
             <StackPanel x:Name="ContentPanel" Margin="12,17,0,28">
                 <StackPanel Margin="20" x:Name="UserNamePanel" Orientation="Horizontal">
-                    <TextBlock Text="Username"></TextBlock>
-                    <TextBox Name="tbUserName" Width="300"></TextBox>
+                    <TextBlock Text="Username :" Width="134" VerticalAlignment="Center" Height="33"></TextBlock>
+                    <TextBox Name="tbUserName" Width="300" GotFocus="tbUserName_GotFocus" LostFocus="tbUserName_LostFocus"></TextBox>
                 </StackPanel>
 
                 <StackPanel Margin="20" x:Name="NamePanel" Orientation="Horizontal">
-                    <TextBlock Text="Name "></TextBlock>
-                    <TextBox Name="tbName" Width="300" ></TextBox>
+                    <TextBlock Text="Name " Width="134" VerticalAlignment="Center" Height="33"></TextBlock>
+                    <TextBox Name="tbName" Width="300" LostFocus="tbName_LostFocus" GotFocus="tbName_GotFocus"></TextBox>
                 </StackPanel>
 
                 <StackPanel Margin="20" x:Name="FirstNamePanel" Orientation="Horizontal">
-                    <TextBlock Text="First Name "></TextBlock>
+                    <TextBlock Text="First Name :" VerticalAlignment="Center" Width="134" Height="31"></TextBlock>
                     <TextBox Name="tbFirstName" Width="300" ></TextBox>
                 </StackPanel>
 
                 <StackPanel Margin="20" x:Name="MailPanel" Orientation="Horizontal">
-                    <TextBlock Text="Mail "></TextBlock>
+                    <TextBlock Text="Mail :" Width="134" VerticalAlignment="Center"></TextBlock>
                     <TextBox Name="tbMail" Width="300" ></TextBox>
                 </StackPanel>
-
                 <StackPanel Margin="20" x:Name="PasswordPanel" Orientation="Horizontal">
-                    <TextBlock Text="Password "></TextBlock>
-                    <PasswordBox Name="PasswordBox" Width="300" ></PasswordBox>
+                    <TextBlock Text="Password :" VerticalAlignment="Center" Width="134" Height="34"></TextBlock>
+                    <PasswordBox Name="PasswordBox" Width="300"></PasswordBox>
                 </StackPanel>
-
                 <StackPanel Margin="20" x:Name="ConfPasswordPanel" Orientation="Horizontal">
-                    <TextBlock Text="Confirm Password "></TextBlock>
-                    <PasswordBox Name="ConfPasswordBox" Width="300" ></PasswordBox>
+                    <TextBlock Text="Confirm :" VerticalAlignment="Center" Width="134"></TextBlock>
+                    <PasswordBox Name="ConfPasswordBox" Width="300"></PasswordBox>
                 </StackPanel>
-
                 <StackPanel Margin="20" x:Name="GenderPanel" Orientation="Horizontal">
+<<<<<<< HEAD
                     <TextBlock Text="Gender "></TextBlock>
                     <StackPanel x:Name="GendeTypePanel" Orientation="Vertical">
                         
                     </StackPanel>
                     <ComboBox Name="ComboBoxGender">
+=======
+                    <TextBlock Text="Gender :" Width="153"></TextBlock>
+                    <ComboBox x:Name="GenderBox" Width="283">
+>>>>>>> 72eda4eeb0f583143a89eb82322ab5dcbff02289
                         <ComboBoxItem Content="Male" />
-                        <ComboBoxItem Content="Female"/>
+                        <ComboBoxItem Content="Female" />
                     </ComboBox>
                 </StackPanel>
 
                 <StackPanel Margin="20" x:Name="BirthDatePanel" Orientation="Horizontal">
-                    <TextBlock Text="BirthDate "></TextBlock>
+                    <TextBlock Text="BirthDate :" Height="30" Width="137"></TextBlock>
                     <TextBox Name="tbBirthDate" Width="300" ></TextBox>
                 </StackPanel>
 
-                <Button Name="btnValidate" Content="Validate" FontSize="17" />
+                <Button Name="btnValidate" Content="Validate" FontSize="17" Click="btnValidate_Click" />
             </StackPanel>
         </ScrollViewer>
+        <TextBlock x:Name="ApplicationTitle" Text="Gift4YourFriends" Style="{StaticResource PhoneTextNormalStyle}" Margin="181,0,18,0" TextAlignment="Center" FontSize="28" VerticalAlignment="Center" />
+        <Image Height="64" HorizontalAlignment="Left" Margin="4,4,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="78" />
     </Grid>
  
     <!--Exemple de code illustrant l'utilisation de l'ApplicationBar-->
