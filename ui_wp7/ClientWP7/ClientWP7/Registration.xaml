@@ -55,16 +55,8 @@
                     <PasswordBox Name="ConfPasswordBox" Width="300"></PasswordBox>
                 </StackPanel>
                 <StackPanel Margin="20" x:Name="GenderPanel" Orientation="Horizontal">
-<<<<<<< HEAD
-                    <TextBlock Text="Gender "></TextBlock>
-                    <StackPanel x:Name="GendeTypePanel" Orientation="Vertical">
-                        
-                    </StackPanel>
-                    <ComboBox Name="ComboBoxGender">
-=======
                     <TextBlock Text="Gender :" Width="153"></TextBlock>
                     <ComboBox x:Name="GenderBox" Width="283">
->>>>>>> 72eda4eeb0f583143a89eb82322ab5dcbff02289
                         <ComboBoxItem Content="Male" />
                         <ComboBoxItem Content="Female" />
                     </ComboBox>
