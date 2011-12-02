@@ -78,6 +78,9 @@
     <Compile Include="UserPage.xaml.cs">
       <DependentUpon>UserPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserProfile.xaml.cs">
+      <DependentUpon>UserProfile.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -104,6 +107,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AppManifest.xml" />
@@ -116,6 +123,8 @@
     <Content Include="Background.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="twitter.jpg" />
+    <Resource Include="fb.jpg" />
     <Content Include="SplashScreenImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
