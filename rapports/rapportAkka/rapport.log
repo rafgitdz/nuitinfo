@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 06:59
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 07:22
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -304,49 +304,53 @@ LaTeX Info: Redefining \pageref on input line 40.
 \openout3 = `rapport.out'.
 
 \AtBeginShipoutBox=\box27
- (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+ <../../logo/LOGO_G4YF.png, id=15, 336.7782pt x 260.172pt>
+File: ../../logo/LOGO_G4YF.png Graphic file (type png)
+
+<use ../../logo/LOGO_G4YF.png>
+(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-<../ressources/logo_bx1.jpg, id=15, 337.26pt x 364.36125pt>
+<../ressources/logo_bx1.jpg, id=17, 337.26pt x 364.36125pt>
 File: ../ressources/logo_bx1.jpg Graphic file (type jpg)
 
 <use ../ressources/logo_bx1.jpg> [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../ressources/logo_bx1.jpg
->]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../../logo/LOGO_G4YF.png> 
+<../ressources/logo_bx1.jpg>]
 (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-1.def
 File: uni-1.def 2004/10/17 UCS: Unicode data U+0100..U+01FF
 )
-<../ressources/brainstorming7.jpeg, id=26, 411.136pt x 308.352pt>
+<../ressources/brainstorming7.jpeg, id=29, 411.136pt x 308.352pt>
 File: ../ressources/brainstorming7.jpeg Graphic file (type jpg)
 
 <use ../ressources/brainstorming7.jpeg>
-<../ressources/brainstorming4.jpeg, id=27, 411.136pt x 308.352pt>
+<../ressources/brainstorming4.jpeg, id=30, 411.136pt x 308.352pt>
 File: ../ressources/brainstorming4.jpeg Graphic file (type jpg)
 
 <use ../ressources/brainstorming4.jpeg>
-<../ressources/brainstorming5.jpeg, id=28, 411.136pt x 308.352pt>
+<../ressources/brainstorming5.jpeg, id=31, 411.136pt x 308.352pt>
 File: ../ressources/brainstorming5.jpeg Graphic file (type jpg)
 
 <use ../ressources/brainstorming5.jpeg>
-Overfull \hbox (52.1305pt too wide) in paragraph at lines 89--91
+Overfull \hbox (52.1305pt too wide) in paragraph at lines 90--92
 [][]   []   [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--91
+Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
  []
 
-<../ressources/solo.jpeg, id=29, 411.136pt x 308.352pt>
+<../ressources/solo.jpeg, id=32, 411.136pt x 308.352pt>
 File: ../ressources/solo.jpeg Graphic file (type jpg)
 
 <use ../ressources/solo.jpeg>
-<../ressources/binome.jpeg, id=30, 411.136pt x 308.352pt>
+<../ressources/binome.jpeg, id=33, 411.136pt x 308.352pt>
 File: ../ressources/binome.jpeg Graphic file (type jpg)
 
 <use ../ressources/binome.jpeg>
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
@@ -354,42 +358,42 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 
+l.95 
       [1 <../ressources/brainstorming7.jpeg> <../ressources/brainstorming4.jpeg
 > <../ressources/brainstorming5.jpeg>]
-<../ressources/brainstorming.jpeg, id=40, 96.36pt x 72.27pt>
+<../ressources/brainstorming.jpeg, id=43, 96.36pt x 72.27pt>
 File: ../ressources/brainstorming.jpeg Graphic file (type jpg)
 
 <use ../ressources/brainstorming.jpeg>
-<../ressources/brainstorming3.jpeg, id=41, 411.136pt x 308.352pt>
+<../ressources/brainstorming3.jpeg, id=44, 411.136pt x 308.352pt>
 File: ../ressources/brainstorming3.jpeg Graphic file (type jpg)
 
 <use ../ressources/brainstorming3.jpeg>
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
+Underfull \hbox (badness 10000) in paragraph at lines 96--98
 
  []
 
-<../ressources/gi.jpeg, id=42, 256.96pt x 192.72pt>
+<../ressources/gi.jpeg, id=45, 256.96pt x 192.72pt>
 File: ../ressources/gi.jpeg Graphic file (type jpg)
 
 <use ../ressources/gi.jpeg>
-<../ressources/shema.jpeg, id=43, 411.136pt x 308.352pt>
+<../ressources/shema.jpeg, id=46, 411.136pt x 308.352pt>
 File: ../ressources/shema.jpeg Graphic file (type jpg)
 
 <use ../ressources/shema.jpeg>
-Underfull \hbox (badness 10000) in paragraph at lines 98--99
+Underfull \hbox (badness 10000) in paragraph at lines 99--100
 
  []
 
-<../ressources/sprint.jpeg, id=44, 256.96pt x 192.72pt>
+<../ressources/sprint.jpeg, id=47, 256.96pt x 192.72pt>
 File: ../ressources/sprint.jpeg Graphic file (type jpg)
 
 <use ../ressources/sprint.jpeg>
-<../ressources/tache.jpg, id=45, 2569.6pt x 1927.2pt>
+<../ressources/tache.jpg, id=48, 2569.6pt x 1927.2pt>
 File: ../ressources/tache.jpg Graphic file (type jpg)
 
 <use ../ressources/tache.jpg>
-Underfull \hbox (badness 10000) in paragraph at lines 100--102
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
 
  []
 
@@ -398,22 +402,22 @@ orming.jpeg> <../ressources/brainstorming3.jpeg> <../ressources/gi.jpeg> <../re
 ssources/shema.jpeg> <../ressources/sprint.jpeg> <../ressources/tache.jpg>]
 [3] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 6556 strings out of 494818
- 90990 string characters out of 1178666
+ 6563 strings out of 494818
+ 91133 string characters out of 1178666
  161179 words of memory out of 3000000
- 9620 multiletter control sequences out of 15000+50000
+ 9624 multiletter control sequences out of 15000+50000
  10577 words of font info for 23 fonts, out of 3000000 for 9000
  212 hyphenation exceptions out of 8191
- 38i,5n,45p,716b,602s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,5n,45p,716b,604s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc
 }</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfbx2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfrm1200.pfb>
-Output written on rapport.pdf (4 pages, 2812947 bytes).
+Output written on rapport.pdf (4 pages, 3525778 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 82 PDF objects out of 1000 (max. 8388607)
  12 named destinations out of 1000 (max. 500000)
- 85 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 90 words of extra memory for PDF output out of 10000 (max. 10000000)
 
