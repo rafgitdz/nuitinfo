@@ -32,7 +32,7 @@
             <ScrollViewer>
                 <ListBox Name="Results" Margin="0,0,0,0">
                     <ListBoxItem>
-                        <Button Width="460" Height="120">
+                        <Button Width="460" Height="120" Click="Button_Click">
                             <Button.Content>
                                 <TextBlock Width="100" FontSize="22" Text="User1" Height="40"/>
                             </Button.Content>
@@ -40,7 +40,7 @@
                     </ListBoxItem>
 
                     <ListBoxItem>
-                        <Button Width="460" Height="120">
+                        <Button Width="460" Height="120" Click="Button_Click_1">
                             <Button.Content>
                                 <TextBlock Width="100" FontSize="22" Text="User2" Height="40"/>
                             </Button.Content>
@@ -48,7 +48,7 @@
                     </ListBoxItem>
 
                     <ListBoxItem>
-                        <Button Width="460" Height="120">
+                        <Button Width="460" Height="120" Click="Button_Click_2">
                             <Button.Content>
                                 <TextBlock Width="100" FontSize="22" Text="User3" Height="40"/>
                             </Button.Content>
@@ -56,7 +56,7 @@
                     </ListBoxItem>
 
                     <ListBoxItem>
-                        <Button Width="460" Height="120">
+                        <Button Width="460" Height="120" Click="Button_Click_3">
                             <Button.Content>
                                 <TextBlock Width="100" FontSize="22" Text="User4" Height="40"/>
                             </Button.Content>
@@ -64,7 +64,7 @@
                     </ListBoxItem>
                     
                     <ListBoxItem>
-                        <Button Width="460" Height="120">
+                        <Button Width="460" Height="120" Click="Button_Click_4">
                             <Button.Content>
                                 <TextBlock Width="100" FontSize="22" Text="User5" Height="40"/>
                             </Button.Content>
@@ -72,7 +72,7 @@
                     </ListBoxItem>
 
                     <ListBoxItem>
-                        <Button Width="460" Height="120">
+                        <Button Width="460" Height="120" Click="Button_Click_5">
                             <Button.Content>
                                 <TextBlock Width="100" FontSize="22" Text="User6" Height="40"/>
                             </Button.Content>
