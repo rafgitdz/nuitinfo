@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 04:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.8.26)  2 DEC 2011 04:58
 entering extended mode
  %&-line parsing enabled.
 **rapport.tex
@@ -319,22 +319,22 @@ LaTeX Info: Redefining \pageref on input line 42.
  (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-<ressources/logo_bx1.jpg, id=11, 337.26pt x 364.36125pt>
-File: ressources/logo_bx1.jpg Graphic file (type jpg)
+<../ressources/logo_bx1.jpg, id=11, 337.26pt x 364.36125pt>
+File: ../ressources/logo_bx1.jpg Graphic file (type jpg)
 
-<use ressources/logo_bx1.jpg> [1
+<use ../ressources/logo_bx1.jpg> [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ressources/logo_bx1.jpg>
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../ressources/logo_bx1.jpg
+>]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) ha
+s been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.83 \end{document}
                     [1] (./rapport.aux) ) 
 Here is how much of TeX's memory you used:
  6017 strings out of 494818
- 84574 string characters out of 1178666
- 158730 words of memory out of 3000000
+ 84589 string characters out of 1178666
+ 158733 words of memory out of 3000000
  9101 multiletter control sequences out of 15000+50000
  9844 words of font info for 22 fonts, out of 3000000 for 9000
  212 hyphenation exceptions out of 8191
@@ -345,7 +345,7 @@ uper/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
 onts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfsl1000.pfb>
-Output written on rapport.pdf (2 pages, 160650 bytes).
+Output written on rapport.pdf (2 pages, 158278 bytes).
 PDF statistics:
  49 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
