@@ -63,6 +63,9 @@
 
                 <StackPanel Margin="20" x:Name="GenderPanel" Orientation="Horizontal">
                     <TextBlock Text="Gender "></TextBlock>
+                    <StackPanel x:Name="GendeTypePanel" Orientation="Vertical">
+                        
+                    </StackPanel>
                     <ComboBox Name="ComboBoxGender">
                         <ComboBoxItem Content="Male" />
                         <ComboBoxItem Content="Female"/>

@@ -67,5 +67,13 @@ namespace ClientWP7
                 passwordBox.Password = "Your password";
             }
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            if (searchUserBox.Text != string.Empty && searchUserBox.Text != "user")
+            {
+                NavigationService.Navigate(new Uri("/SearchResults.xaml", UriKind.RelativeOrAbsolute));
+            }
+        }
     }
 }
