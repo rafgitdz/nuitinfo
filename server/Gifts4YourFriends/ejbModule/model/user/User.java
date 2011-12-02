@@ -48,6 +48,7 @@ public class User implements Serializable {
 
 	public User(String name, String lastname, String email, String nickname,
 			String password, Integer sex) {
+
 		_name = name;
 		_lastname = lastname;
 		_email = email;
@@ -59,6 +60,7 @@ public class User implements Serializable {
 
 	public User(String name, String lastname, Date birthDate, String email,
 			String nickname, String password, Boolean sex) {
+
 		_name = name;
 		_lastname = lastname;
 		_birthDate = birthDate;
