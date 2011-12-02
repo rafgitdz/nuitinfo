@@ -35,10 +35,16 @@ public class loginForm extends Composite {
  
         final ButtonItem logAccount = new ButtonItem();  
         logAccount.setName("logAccount");  
-        logAccount.setTitle("Log Account");  
+        logAccount.setTitle("Log Account");
+        
         logAccount.addClickHandler(new ClickHandler() {  
             public void onClick(ClickEvent event) {  
-                form.validate();  
+                if(form.validate()) {
+                    return;
+                }
+                
+                // requête soap
+                
             }  
         });
         
