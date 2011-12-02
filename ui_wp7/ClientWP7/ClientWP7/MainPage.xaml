@@ -9,14 +9,14 @@
     mc:Ignorable="d" FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait" Orientation="Portrait"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
     shell:SystemTray.IsVisible="True" d:DesignHeight="768" d:DesignWidth="480">
 
     <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
-            <RowDefinition Height="70"/>
-            <RowDefinition Height="698*"/>
+            <RowDefinition Height="81"/>
+            <RowDefinition Height="687*"/>
         </Grid.RowDefinitions>
 
         <!--TitlePanel contient le nom de l'application et le titre de la page-->
@@ -35,7 +35,7 @@
             <TextBox FontSize="18" Height="62" HorizontalAlignment="Left" Margin="168,37,0,0" Name="searchUserBox" Text="user" VerticalAlignment="Top" Width="287" Grid.Row="1" />
             <TextBlock Height="30" HorizontalAlignment="Left" Margin="6,52,0,0" Name="textBlock4" Text="Search user :" VerticalAlignment="Top" Width="144" Grid.Row="1" />
             <PasswordBox Height="59" HorizontalAlignment="Left" Margin="170,146,0,0" Name="passwordBox" VerticalAlignment="Top" Width="287" Password="Your password" GotFocus="passwordBox_GotFocus" LostFocus="passwordBox_LostFocus" FontSize="18" PasswordChar="●" />
-            <Button FontSize="16" Height="60" HorizontalAlignment="Left" Margin="290,90,0,0" Name="button1" VerticalAlignment="Top" Width="160" Grid.Row="1" Content="Search" />
+            <Button FontSize="16" Height="60" HorizontalAlignment="Left" Margin="290,90,0,0" Name="button1" VerticalAlignment="Top" Width="160" Grid.Row="1" Content="Search" Click="button1_Click" />
         </Grid>
         <TextBlock x:Name="ApplicationTitle" Text="Gift4YourFriends" Style="{StaticResource PhoneTextNormalStyle}" Margin="181,0,18,0" TextAlignment="Center" FontSize="28" VerticalAlignment="Center" />
         <Image Height="64" HorizontalAlignment="Left" Margin="4,4,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="78" />

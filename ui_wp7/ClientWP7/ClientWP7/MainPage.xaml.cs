@@ -23,7 +23,7 @@ namespace ClientWP7
 
         private void createAccount_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/UserPage.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Registration.xaml", UriKind.RelativeOrAbsolute));
         }
 
         private void nicknameBox_GotFocus(object sender, RoutedEventArgs e)
@@ -65,6 +65,14 @@ namespace ClientWP7
             if (passwordBox.Password == "")
             {
                 passwordBox.Password = "Your password";
+            }
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            if (searchUserBox.Text != string.Empty && searchUserBox.Text != "user")
+            {
+                NavigationService.Navigate(new Uri("/SearchResults.xaml", UriKind.RelativeOrAbsolute));
             }
         }
     }
