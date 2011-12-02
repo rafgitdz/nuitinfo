@@ -2,40 +2,33 @@
  * This class stores all the information about the user's different wishes
  */
 
-package model;
+package model.user;
 
-import java.util.List;
-import java.util.ArrayList;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.ManyToMany;
 
 
-/**
- *
- * @author mavomoeb
- */
-//@Entity
+@Entity
 public class Wish implements Serializable{
     private static final long serialVersionUID = 1L;
-   //@Id
-    //@GeneratedValue(strategy = GenerationType.AUTO)
+    
+   @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long _id;
     
-    
-   // @Column(name="name")
     private String _name;
 
-   // @Column(name="description")
     private String _description;
 
-   // @ManyToMany(cascade=CascadeType.ALL)
-    private List<Category> _categories;
+   @ManyToMany
+   private List<Category> _categories;
 
     public Wish() {
         this._categories = new ArrayList<Category>();

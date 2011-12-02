@@ -1,23 +1,22 @@
-/*
- * The user of our app
- */
-
-package model;
+package model.user;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Transient;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 
 @Entity
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long _id;
@@ -36,10 +35,10 @@ public class User implements Serializable {
 
 	private Boolean _sex;
 
-	@Transient
+	@ManyToMany(targetEntity = User.class)
 	private List<User> _friends;
 
-	@Transient
+	@OneToMany(cascade = CascadeType.ALL, targetEntity = Wish.class)
 	private List<Wish> _wishList;
 
 	public User() {
@@ -48,7 +47,7 @@ public class User implements Serializable {
 	}
 
 	public User(String name, String lastname, String email, String nickname,
-			String password) {
+			String password, Integer sex) {
 		_name = name;
 		_lastname = lastname;
 		_email = email;
@@ -193,5 +192,9 @@ public class User implements Serializable {
 
 	public void removeWish(Integer position) {
 		_wishList.remove(position);
+	}
+
+	public void setWishList(List<Wish> wishlist) {
+		_wishList = wishlist;
 	}
 }

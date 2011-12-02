@@ -3,8 +3,12 @@
  * and open the template in the editor.
  */
 
-package model;
+package model.user;
 
+/**
+ *
+ * @author mavomoeb
+ */
 public enum Category {
-	SPORT, LITERATURE, AUTOMOBILE,
+    SPORT, LITERATURE, AUTOMOBILE,
 }
